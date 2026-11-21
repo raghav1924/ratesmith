@@ -1,0 +1,52 @@
+{
+  "name": "ratesmith",
+  "version": "1.0.0",
+  "description": "Developer-First API Rate Limiter & Throttling Simulator, IETF Header Linter, Jitter & Backoff Visualizer & Bento Grid Studio. Author: Jatin Sharma (https://jatinsh.netlify.app/)",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "ratesmith": "dist/cli.js"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "node /Users/jatinsharma/.local/bin/lib/node_modules/typescript/bin/tsc",
+    "prepublishOnly": "npm run build",
+    "test": "npm run build && node --test dist/tests/*.test.js",
+    "start": "node dist/cli.js",
+    "studio": "node dist/cli.js studio",
+    "sim": "node dist/cli.js sim",
+    "jitter": "node dist/cli.js jitter",
+    "audit": "node dist/cli.js audit",
+    "proxy": "node dist/cli.js proxy"
+  },
+  "keywords": [
+    "rate-limit",
+    "rate-limiter",
+    "throttling",
+    "token-bucket",
+    "leaky-bucket",
+    "sliding-window",
+    "jitter",
+    "backoff",
+    "exponential-backoff",
+    "ietf-ratelimit",
+    "retry-after",
+    "429-too-many-requests",
+    "bento-grid",
+    "web-studio",
+    "jatin-sharma"
+  ],
+  "author": "Jatin Sharma <raghavjatin245@gmail.com> (https://jatinsh.netlify.app/)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/raghav1924/ratesmith.git"
+  },
+  "bugs": {
+    "url": "https://github.com/raghav1924/ratesmith/issues"
+  },
+  "homepage": "https://github.com/raghav1924/ratesmith#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

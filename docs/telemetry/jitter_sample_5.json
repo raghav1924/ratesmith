@@ -1,0 +1,9 @@
+{
+  "sample_id": 5,
+  "strategy": "full-jitter",
+  "workers": 100,
+  "collision_rate_percent": 15,
+  "avg_delay_ms": 1950,
+  "p95_delay_ms": 6200,
+  "status": "VERIFIED"
+}
